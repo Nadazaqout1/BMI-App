@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="next">Next</string>
+    <string name="BMI_Analyzer">BMI Analyzer</string>
+    <string name="Welcome_Back">Welcome Back</string>
+    <string name="login_statement">if you already have an account, log in</string>
+    <string name="Username">Username</string>
+    <string name="password">Password</string>
+    <string name="Login_button">LOG IN</string>
+    <string name="dont_having_account">You Don't Have An Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create New Account</string>
+    <string name="signup_statement">if you do not already have an account</string>
+    <string name="name">Name</string>
+    <string name="email">E-Mail</string>
+    <string name="re_password">Re-Password</string>
+    <string name="create_button">CREATE</string>
+    <string name="having_account">You Have An Account?</string>
+    <string name="login">Login</string>
+    <string name="complete_information">Complete Your Information</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="length">Length</string>
+    <string name="date_birth">Date Of Birth</string>
+    <string name="save_data_button">Save Data</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+    <string name="hi">Hi,Mohammed</string>
+    <string name="current_status">Current Status</string>
+    <string name="old_status">Old Status</string>
+    <string name="add_food_button">Add Food</string>
+    <string name="add_record_button">Add Record</string>
+    <string name="view_button">View Food</string>
+    <string name="logout">Logout</string>
+    <string name="new_record">New Record</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="add_food_details">Add Food Details</string>
+    <string name="add_food_name">Name</string>
+    <string name="category">Category</string>
+    <string name="add_food_calory">Calory</string>
+    <string name="cal_g">cal/g</string>
+    <string name="photo">Photo</string>
+    <string name="save_button">Save</string>
+    <string name="upload_photo_button">Upload Photo</string>
+    <string name="edit_food_details">Edit Food Details</string>
+
+
+</resources>

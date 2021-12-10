@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_food"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI_Analyzer"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_food_details"
+        android:text="@string/add_food_details"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:textAlignment="center"
+        android:lineSpacingExtra="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_food_name"
+        android:text="@string/add_food_name"
+        android:textColor="@color/blue"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:textSize="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="arial"
+            android:text="@string/category"
+            android:textColor="@color/blue"
+            android:textFontWeight="700"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_food_calory"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="arial"
+            android:text="@string/add_food_calory"
+            android:textColor="@color/blue"
+            android:textFontWeight="700"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/blue"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cal_g"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="arial"
+            android:text="@string/cal_g"
+            android:textFontWeight="700"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="arial"
+        android:text="@string/photo"
+        android:textColor="@color/blue"
+        android:textFontWeight="700"
+        android:textSize="20dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="arial"
+            android:text="@string/upload_photo_button"
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="arial"
+            android:text="@string/save_button"
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            android:padding="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

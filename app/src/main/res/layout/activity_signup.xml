@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI_Analyzer"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_statement"
+        android:textSize="18sp"
+        android:fontFamily="arial"
+        android:textFontWeight="400"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="@string/name"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        android:drawableEnd="@drawable/visibility"
+        android:paddingEnd="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/re_password"
+        android:hint="@string/re_password"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"
+        android:drawableEnd=""
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create"
+        android:text="@string/create_button"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:fontFamily="arial"
+        android:textFontWeight="700"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:text="@string/having_account"
+            android:textColor="@color/black"
+            android:textFontWeight="500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@login"
+            android:fontFamily="arial"
+            android:text="@string/login"
+            android:textColor="@color/blue"
+            android:textFontWeight="700" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
