@@ -20,7 +20,7 @@
 
 
     <TextView
-        android:id="@+id/next"
+        android:id="@+id/splash_tv_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next"

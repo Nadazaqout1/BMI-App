@@ -32,15 +32,16 @@
         android:textAlignment="center"
         android:lineSpacingExtra="10dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="50dp"
         />
 
 
     <LinearLayout
-        android:layout_width="346dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,25 +56,33 @@
             android:textFontWeight="700"
             android:textSize="20dp" />
 
+
         <TextView
+            android:id="@+id/add_bmi_tv_weight_min"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="15dp"
-            android:drawableStart="@drawable/ic_baseline_minimize_24" />
+            android:layout_height="35dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="11dp"
+            android:drawableStart="@drawable/ic_baseline_minimize_24"
+            android:background="@drawable/border"/>
+
 
         <EditText
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:backgroundTint="@color/blue" />
+            android:id="@+id/add_bmi_et_weight"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            />
 
 
         <TextView
+            android:id="@+id/add_bmi_tv_weight_add"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:drawableEnd="@drawable/ic_baseline_add_24" />
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:drawableEnd="@drawable/ic_baseline_add_24"
+            android:background="@drawable/border"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -90,6 +99,7 @@
 
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -110,25 +120,36 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="20dp"
             />
+
+
         <TextView
+            android:id="@+id/add_bmi_tv_length_min"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="11dp"
             android:drawableStart="@drawable/ic_baseline_minimize_24"
-            android:layout_marginBottom="15dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="5dp"/>
+            android:background="@drawable/border"/>
+
 
         <EditText
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:backgroundTint="@color/blue" />
+            android:id="@+id/add_bmi_et_length"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            />
 
 
         <TextView
+            android:id="@+id/add_bmi_tv_length_add"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
             android:drawableEnd="@drawable/ic_baseline_add_24"
-            android:layout_marginStart="5dp"/>
+            android:background="@drawable/border"/>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -147,6 +168,8 @@
     </LinearLayout>
 
 
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -163,18 +186,17 @@
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
-            android:layout_marginEnd="15dp"
             android:layout_marginBottom="20dp"
             />
 
 
         <EditText
-            android:layout_width="165dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue"
-            android:layout_marginBottom="5dp"
+            android:id="@+id/add_bmi_et_date"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="65dp"
+            android:layout_marginStart="90dp"
+            android:background="@drawable/border"
             />
 
 
@@ -198,26 +220,27 @@
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
-            android:layout_marginEnd="15dp"
             android:layout_marginBottom="20dp"
             />
 
 
         <EditText
-            android:layout_width="165dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue"
-            android:layout_marginBottom="5dp"
+            android:id="@+id/add_bmi_et_time"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="65dp"
+            android:layout_marginStart="85dp"
+            android:background="@drawable/border"
             />
-
 
 
 
     </LinearLayout>
 
+
+
     <Button
+        android:id="@+id/add_bmi_bt_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/save_button"

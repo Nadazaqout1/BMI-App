@@ -8,8 +8,6 @@
     android:orientation="vertical">
 
 
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,8 +33,6 @@
         android:layout_marginTop="60dp"
         />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,9 +45,9 @@
         />
 
     <EditText
+        android:id="@+id/signup_et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/name"
         android:hint="@string/name"
         android:backgroundTint="@color/blue"
         android:layout_marginTop="50dp"
@@ -61,9 +57,9 @@
         />
 
     <EditText
+        android:id="@+id/signup_et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
         android:hint="@string/email"
         android:backgroundTint="@color/blue"
         android:layout_marginTop="10dp"
@@ -73,9 +69,9 @@
         />
 
     <EditText
+        android:id="@+id/signup_et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
         android:hint="@string/password"
         android:backgroundTint="@color/blue"
         android:layout_marginTop="10dp"
@@ -87,23 +83,23 @@
         />
 
     <EditText
+        android:id="@+id/signup_et_repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/re_password"
         android:hint="@string/re_password"
         android:backgroundTint="@color/blue"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="15dp"
         android:paddingLeft="10dp"
-        android:drawableEnd=""
+
         />
 
 
     <Button
+        android:id="@+id/signup_bt_create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/create"
         android:text="@string/create_button"
         android:backgroundTint="@color/blue"
         android:textSize="20sp"
@@ -129,9 +125,9 @@
             android:textFontWeight="500" />
 
         <TextView
+            android:id="@+id/signup_tv_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@login"
             android:fontFamily="arial"
             android:text="@string/login"
             android:textColor="@color/blue"

@@ -32,7 +32,7 @@
         android:textAlignment="center"
         android:lineSpacingExtra="10dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         />
 
 
@@ -50,20 +50,19 @@
             android:fontFamily="arial"
             android:textFontWeight="700"
             android:textSize="20dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginBottom="20dp"
             />
 
 
         <EditText
-            android:layout_width="165dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
+            android:id="@+id/Edit_Food_et_name"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/rounded_rectangle"
             />
 
     </LinearLayout>
@@ -74,19 +73,38 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/category"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginBottom="20dp"
             android:fontFamily="arial"
             android:text="@string/category"
             android:textColor="@color/blue"
             android:textFontWeight="700"
             android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/Edit_Food_et_category"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_rectangle"
+            />
+
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_rectangle"
+            />
 
 
     </LinearLayout>
@@ -102,9 +120,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/add_food_calory"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginBottom="20dp"
             android:fontFamily="arial"
             android:text="@string/add_food_calory"
             android:textColor="@color/blue"
@@ -113,24 +130,25 @@
 
 
         <EditText
+            android:id="@+id/Edit_Food_et_calory"
             android:layout_width="125dp"
             android:layout_height="match_parent"
             android:backgroundTint="@color/blue"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="72dp"
+            android:background="@drawable/rounded_rectangle"/>
+
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/cal_g"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="15dp"
+            android:layout_height="35dp"
             android:fontFamily="arial"
             android:text="@string/cal_g"
             android:textFontWeight="700"
-            android:textSize="12dp" />
+            android:textSize="18dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp" />
 
     </LinearLayout>
 
@@ -139,15 +157,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/photo"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="20dp"
         android:fontFamily="arial"
         android:text="@string/photo"
         android:textColor="@color/blue"
         android:textFontWeight="700"
         android:textSize="20dp" />
 
+
+    <ImageView
+        android:id="@+id/Edit_Food_iv_photo"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/salmon"
+        android:background="@drawable/rounded_rectangle"/>
 
 
     <LinearLayout
@@ -159,6 +185,7 @@
 
 
         <Button
+            android:id="@+id/Edit_Food_bt_upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
@@ -170,6 +197,7 @@
             android:padding="10dp"/>
 
         <Button
+            android:id="@+id/Edit_Food_bt_save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/blue"
@@ -182,6 +210,10 @@
 
 
     </LinearLayout>
+
+
+
+
 
 
 

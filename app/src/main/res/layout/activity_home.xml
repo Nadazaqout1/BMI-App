@@ -50,16 +50,16 @@
         />
 
      <EditText
+         android:id="@+id/home_et_current_status"
      android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-         android:typeface="normal"
-
+     android:layout_height="45dp"
+     android:typeface="normal"
      android:hint="Normal (stil Good)"
      android:layout_marginTop="10dp"
      android:layout_marginStart="40dp"
      android:layout_marginEnd="40dp"
-         android:textAlignment="center"
-
+     android:textAlignment="center"
+     android:background="@drawable/rounded_rectangle"
     />
 
 
@@ -93,6 +93,7 @@
 
 
     <Button
+        android:id="@+id/home_bt_add_food"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
@@ -104,6 +105,7 @@
         android:padding="10dp"/>
 
     <Button
+        android:id="@+id/home_bt_add_record"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
@@ -118,6 +120,7 @@
 </LinearLayout>
 
     <Button
+        android:id="@+id/home_bt_view_food"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/view_button"
@@ -145,6 +148,7 @@
 
 
     <TextView
+        android:id="@+id/home_tv_logout"
         android:layout_width="45dp"
         android:layout_height="1dp"
         android:background="@color/black"

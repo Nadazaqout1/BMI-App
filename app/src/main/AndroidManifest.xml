@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Food_List"
+            android:exported="false" />
+        <activity
             android:name=".Edit_Food"
             android:exported="false" />
         <activity
             android:name=".add_food"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".Add_BMI_record_Activity"
             android:exported="false" />

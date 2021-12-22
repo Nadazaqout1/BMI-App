@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+
+        <ImageView
+            android:id="@+id/foodItems_img"
+            android:layout_width="100dp"
+            android:layout_height="98dp"
+            android:background="@drawable/rounded_rectangle"
+            android:src="@drawable/salmon" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:background="@drawable/rounded_rectangle">
+
+            <TextView
+                android:id="@+id/foodItems_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salmon"
+                android:gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/foodItems_bt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_button"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue"
+                android:textAllCaps="false"
+                android:layout_columnSpan="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/foodItems_tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fish"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-5dp"/>
+
+            <TextView
+                android:id="@+id/foodItems_tv_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calories_cal_g"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/foodItems_iv_delete"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_close_24"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@color/blue"
+                android:layout_columnSpan="1"
+                android:layout_gravity="right"
+                android:layout_margin="1dp"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>

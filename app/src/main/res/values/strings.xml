@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">BMI Analyzer</string>
     <string name="next">Next</string>
     <string name="BMI_Analyzer">BMI Analyzer</string>
     <string name="Welcome_Back">Welcome Back</string>
@@ -7,7 +7,7 @@
     <string name="Username">Username</string>
     <string name="password">Password</string>
     <string name="Login_button">LOG IN</string>
-    <string name="dont_having_account">You Don't Have An Account?</string>
+    <string name="dont_having_account">You Don\'t Have An Account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="create_account">Create New Account</string>
     <string name="signup_statement">if you do not already have an account</string>
@@ -46,6 +46,11 @@
     <string name="save_button">Save</string>
     <string name="upload_photo_button">Upload Photo</string>
     <string name="edit_food_details">Edit Food Details</string>
+    <string name="food_list">Food List</string>
+    <string name="edit_button">Edit</string>
+    <string name="fish">Fish</string>
+    <string name="salmon">Salmon</string>
+    <string name="calories_cal_g">22 cal/g</string>
 
 
 </resources>

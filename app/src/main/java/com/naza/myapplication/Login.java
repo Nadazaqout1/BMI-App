@@ -12,10 +12,6 @@ import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
-    EditText username;
-    EditText password;
-    Button login;
-    TextView signup;
 
 
     @Override
@@ -24,17 +20,20 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
-        login = findViewById(R.id.login);
-        signup = findViewById(R.id.signup);
+        EditText et_username = findViewById(R.id.login_et_username);
+        EditText et_password = findViewById(R.id.login_et_password);
+        Button bt_login = findViewById(R.id.login_bt_login);
+        TextView tv_signup = findViewById(R.id.login_tv_signup);
 
-        signup.setOnClickListener(new View.OnClickListener(){
+        tv_signup.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){ moveTosignup();}
+            public void onClick(View view){
+                Intent intent=new Intent(Login.this,signup.class);
+                startActivity(intent);
+            }
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
+        bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

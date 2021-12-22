@@ -47,11 +47,12 @@
         android:layout_marginTop="10dp"
         />
 
+
     <EditText
+        android:id="@+id/login_et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
-        android:id="@+id/username"
         android:hint="@string/Username"
         android:layout_marginTop="40dp"
         android:layout_marginRight="30dp"
@@ -60,23 +61,23 @@
        />
 
     <EditText
+        android:id="@+id/login_et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
-        android:id="@+id/password"
         android:hint="@string/password"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="15dp"
         android:paddingLeft="10dp"
-     android:drawableEnd="@drawable/visibility"
-     android:paddingEnd="10dp"/>
+        android:drawableEnd="@drawable/visibility"
+        android:paddingEnd="10dp"/>
 
 
     <Button
+        android:id="@+id/login_bt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
         android:text="@string/Login_button"
         android:textSize="20sp"
         android:backgroundTint="@color/blue"
@@ -102,9 +103,9 @@
             android:textFontWeight="500" />
 
         <TextView
+            android:id="@+id/login_tv_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/signup"
             android:fontFamily="arial"
             android:text="@string/sign_up"
             android:textColor="@color/blue"

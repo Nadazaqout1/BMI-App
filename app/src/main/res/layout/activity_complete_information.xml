@@ -33,7 +33,7 @@
         android:textAlignment="center"
         android:lineSpacingExtra="10dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         />
 
 
@@ -60,10 +60,12 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginStart="45dp">
 
 
         <RadioButton
+            android:id="@+id/complete_rb_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/male"
@@ -72,12 +74,12 @@
             android:fontFamily="arial"
             android:textFontWeight="500"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginEnd="20dp"
             android:checked="true"
             />
 
         <RadioButton
+            android:id="@+id/complete_rb_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/female"
@@ -86,7 +88,7 @@
             android:fontFamily="arial"
             android:textFontWeight="500"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             />
 
@@ -99,6 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,26 +116,33 @@
             android:textFontWeight="700"
             android:textSize="20dp" />
 
+
         <TextView
+            android:id="@+id/complete_tv_weight_min"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="15dp"
-            android:drawableStart="@drawable/ic_baseline_minimize_24" />
+            android:layout_height="35dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="11dp"
+            android:drawableStart="@drawable/ic_baseline_minimize_24"
+            android:background="@drawable/border"/>
+
 
         <EditText
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:backgroundTint="@color/blue"
+            android:id="@+id/complete_et_weight"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
             />
 
 
         <TextView
+            android:id="@+id/complete_tv_weight_add"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:drawableEnd="@drawable/ic_baseline_add_24" />
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:drawableEnd="@drawable/ic_baseline_add_24"
+            android:background="@drawable/border"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -170,25 +180,36 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="20dp"
         />
+
+
         <TextView
+            android:id="@+id/complete_tv_length_min"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="11dp"
             android:drawableStart="@drawable/ic_baseline_minimize_24"
-            android:layout_marginBottom="15dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="5dp"/>
+            android:background="@drawable/border"/>
+
 
         <EditText
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:backgroundTint="@color/blue" />
+            android:id="@+id/complete_et_length"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            />
 
 
         <TextView
+            android:id="@+id/complete_tv_length_add"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
             android:drawableEnd="@drawable/ic_baseline_add_24"
-            android:layout_marginStart="5dp"/>
+            android:background="@drawable/border"/>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -229,17 +250,16 @@
 
 
         <EditText
-            android:layout_width="165dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/blue"
-            android:layout_marginBottom="5dp"
+            android:id="@+id/complete_et_dob"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/border"
             />
 
 
-
-
     </LinearLayout>
+
 
     <Button
         android:layout_width="match_parent"
