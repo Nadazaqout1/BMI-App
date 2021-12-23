@@ -2,6 +2,7 @@ package com.naza.myapplication;
 
 import android.content.Intent;
 import android.icu.util.LocaleData;
+import android.os.Build;
 
 import java.time.Period;
 import java.util.ArrayList;
@@ -17,18 +18,28 @@ public class User {
     float AgePercent;
 
 
-    public User(){
+
+    public User(String name,String email,String password,String gender,String DOB,ArrayList<BMIRecord>records){
         this.records = new ArrayList<BMIRecord>();
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.gender = gender;
+        this.DOB = DOB;
 
-        records.add(new BMIRecord("20/2/2022",56,167));
-        records.add(new BMIRecord("21/2/2022",60,168));
-        records.add(new BMIRecord("22/2/2022",55,154));
-        records.add(new BMIRecord("23/2/2022",58,169));
-        records.add(new BMIRecord("24/2/2022",50,150));
-        records.add(new BMIRecord("25/2/2022",54,155));
-        records.add(new BMIRecord("26/2/2022",66,170));
-        records.add(new BMIRecord("27/2/2022",49,150));
+        calculateAge();
+        calculateAgePercent();
+        calculateBmiValue(records.get(bmisLength()-1));
+        BMIChange();
 
+    }
+
+
+
+    public void calculateBmiValue(BMIRecord record){
+        float record_value;
+        record_value = (float) ((record.getWeight()/Math.pow(record.getLength(),2))*this.getAgePercent());
+        record.setrecord_value(record_value);
     }
 
     public ArrayList<BMIRecord> getRecords(){ return records; }
@@ -39,9 +50,9 @@ public class User {
         int yearOfBirth = Integer.parseInt(DOB.substring(6,10));
 
         LocaleData today=LocaleData.now();
-        LocaleData birth_date = LocaleData.of(yearOfBirth,monthOfBirth,dayOfBirth);
+        LocaleData DOB = LocaleData.of(yearOfBirth,monthOfBirth,dayOfBirth);
 
-        int age = Period.between(birth_date,today).getYears();
+        int age = Period.between(DOB,today).getYears();
         this.setAge(age);
 
     }
@@ -61,4 +72,76 @@ public class User {
         else setAgePercent((float)1);
     }
 
+}
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getBirthday() {
+        return DOB;
+    }
+
+    public void setBirthday(String birthday) {
+        this.DOB = birthday;
+    }
+
+
+    public ArrayList<BMIRecord> getBmis() {
+        return records;
+    }
+
+    public int bmisLength() {
+        return records.size();
+    }
+
+    public void setBmis(BMIRecord bmi_item) {
+        records.add(bmi_item);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public float getAgePercent() {
+        return agePercent;
+    }
+
+    public void setAgePercent(float agePercent) {
+        this.agePercent = agePercent;
+    }
 }

@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class Login extends AppCompatActivity {
 
 
+    private boolean isValid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

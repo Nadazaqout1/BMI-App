@@ -23,9 +23,10 @@
 
 
     <TextView
+        android:id="@+id/home_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hi"
+        android:text=""
         android:textColor="#4A4848"
         android:textSize="28sp"
         android:fontFamily="arial"
@@ -37,6 +38,7 @@
         />
 
     <TextView
+        android:id="@+id/home_tv_currentStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/current_status"
@@ -77,6 +79,7 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv_oldStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
